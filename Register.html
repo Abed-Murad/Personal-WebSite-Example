@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/theme/theme-black.css">
+
+    <style>
+      html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft","Roboto",sans-serif;}
+      .sidenav a {padding:16px;font-weight:bold}
+    </style>
+  </head>
+
+
+  <body>
+
+
+    <!-- Side Nav Bar-->
+    <nav class="sidenav collapse white animate-left card-2" style="z-index:5;width:220px;">
+
+      <a href="MainPage.html" class="border-bottom large">
+        <img src="img\logo.png" style="width:80%">
+      </a>
+
+      <a href="MainPage.html" >Home</a>    
+      <a href="LecturesSchedule.html">Lectures Schedule</a>   
+      <a href="Register.html" class="grey medium">Register</a>    
+      <a href="Log_In.html">Log in</a>    
+      <a href="Contact_Me.html">Contact me</a>    
+
+      <div class="accordion">
+        <a  onclick="myFunc('Demo3')" href="javascript:void(0)">My Interests<img src="img/drop_down.png"></a> 
+        <div id="Demo3" class="accordion-content animate-left padding-tiny">
+          <a href="Interest_1.html" class="padding-large">Reading</a>
+          <a href="Interest_2.html" class="padding-large">Psychology</a>
+          <a href="Interest_3.html" class="padding-large">philosophy</a>
+        </div>
+      </div>  
+    </nav>
+    <!-- Side Nav Bar END-->
+
+
+
+    <!--this div set the margin between the side Nav Bar And the Main Content-->
+    <div class="main" style="margin-left:220px;">
+
+
+
+    <!-- switch Headder-->
+    <div id="myTop" class="top container padding-16 theme large">
+      <span id="myIntro" class="hide">Abdallah J.Murad</span>
+      <span id="myIntro2" class="hide margin-left">120150972</span>
+    </div>
+    <!-- switch Headder END-->
+
+
+
+    <!-- heddin Headder-->
+    <header class="container theme padding-16 ">
+
+      <ul class="navbar theme margin-top" style="float:right !important ">
+        <!-- FixMe: find a way to float this to the right of the cecreen in a resbonsive way-->
+        <li>
+          <a class="padding-medium"  href="https://www.linkedin.com/in/abdullah-murad-763948b2?trk=nav_responsive_tab_profile_pic" target="_blank">
+            <img class="icon-size margin-top" src="img\icon_linkedin.svg">
+          </a>
+        </li>
+        <li>
+          <a class="padding-medium" href="https://plus.google.com/112121830839897343269" target="_blank">
+            <img class="icon-size margin-top" src="img\icon_googleplus.svg">
+          </a>
+        </li>
+        <li>
+          <a class="padding-medium" href="https://github.com/abdallahMurad" target="_blank">
+            <img class="icon-size margin-top" src="img\icon_github.svg">
+          </a>
+        </li>
+        <li>
+          <a class="padding-medium" href="https://www.facebook.com/AbdallahJalaMurad" target="_blank">
+            <img class="icon-size margin-top" src="img\icon_facebook.svg">
+          </a>
+        </li>
+        <li>
+          <a class="padding-medium" href="https://twitter.com/mrabdallahmurad" target="_blank">
+            <img class="icon-size margin-top" src="img\icon_twitter.svg">
+          </a>
+        </li>
+      </ul>
+
+      <h5 class="xlarge padding-8">Abdallah J.Murad</h5>
+      <h5 class="xlarge padding-8">120150972</h5>
+    </header>
+    <!-- heddin Headder END-->
+
+
+
+
+    <div class="container padding-jumbo ">
+
+      <div class="example section ">
+      <br>
+              <h1 class="section text-teal padding-left-32">Register</h1>
+
+
+      <form class="container card-4 margin-156 animate-right">
+        <h1 class="section text-teal">Personal Data</h1>
+
+      <div class="group">      
+        <input id="name" class="input" type="text" required>
+        <label class="label validate"><strong>Name<sup> *</sup></strong></label>
+      </div>
+      <div class="group">      
+        <input id="address1" class="input" type="text" required>
+        <label class="label validate"><strong>Address 1<sup> *</sup></strong></label>
+      </div>
+      <div class="group">      
+        <input id="address2" class="input" type="text" required>
+        <label class="label validate"><strong>Address 2<sup> *</sup></strong></label>
+      </div>  
+      <div class="group">      
+        <input id="wibsite" class="input" type="text">
+        <label class="label validate"><strong>Wibsite</strong></label>
+      </div>
+      <div class="group">      
+        <input id="DOB" class="input" type="text">
+        <label class="label validate"><strong>Date of Berth</strong></label>
+
+         
+      </div>
+      
+        <div class="half">
+        <input id="male" class="radio" type="radio" name="gender" value="male" >
+        <label class="validate">Male</label>
+        <br>
+        <input id="female" class="radio" type="radio" name="gender" value="female">
+        <label class="validate">Female</label>
+        
+        </div>
+
+        <div class="half">
+        <input id="Married" class="radio" type="radio" name="Married" value="Married" >
+        <label class="validate">Married</label>
+        <br>
+        <input id="notMarried" class="radio" type="radio" name="Married" value="notMarried">
+        <label class="validate">Not Married</label>
+        
+        </div>
+
+      <div class="row">
+      <dir class="row-padding"></dir>
+      <dir class="row-padding"></dir>
+
+
+      <div class="group">
+
+        <label class="label validate" ><strong>Country</strong></label>
+        <select class="select input" name="option">
+          <option value="" disabled selected>Choose your Country</option>
+          <option value="1">Palestian</option>
+          <option value="2">Canda</option>
+          <option value="3">Egypt</option>
+        </select>
+        
+
+      </div>
+
+
+      </div>
+      
+    
+    
+
+
+
+
+
+        
+
+              <h1 class="section text-teal">Account Data</h1>
+
+      <div class="group">      
+        <input id = "userName" class="input" type="text" required>
+        <label class="label validate"><strong>User Name<sup> *</sup></strong></label>
+      </div>
+      <div class="group">      
+        <input id = "password" class="input" type="password" required>
+        <label class="label validate"><strong>Password<sup> *</sup></strong></label>
+      </div>
+      <div class="group">      
+        <input id = "accountDataName" class="input" type="text" required>
+        <label class="label validate"><strong>Name<sup> *</sup></strong></label>
+      </div>  
+      <div class="group">      
+        <input id = "email" class="input" type="text" required>
+        <label class="label validate"><strong>Email<sup> *</sup></strong></label>
+      </div>  
+      
+      
+
+      <div class="row">
+        
+      </div>
+                    <div class ="half">
+                       <button class="btn btn-block red section" type="reset">Reset</button>
+                    </div><div class ="half">
+                       <input class="btn btn-block teal section" value ="Register" onclick="validate()"></input>
+                    </div>
+      </div>
+    </form>
+      </div>
+
+    <!-- Footer-->
+    <footer class="container theme">
+      <div class="row-padding center margin-top">
+        
+        <div class="third">
+          <div class=" padding-top" style="min-height:100px">
+            <h3>Contact Info</h3><br>
+            <p>Email: <a href="mailto:Abdallah.Murad@mail.com">Abdallah.Murad@Mail.com</a></p>
+            <p>Phone: <a href="tel:972598403027">+972598403027</a></p>
+            <p>FB: <a href="https://www.facebook.com/AbdallahJalaMurad" target="_blank">Abdallah J.Murad</a></p>
+            <!--this the date JS Method-->
+            <!--
+            <p id="FullDate"></p>
+            <script>
+              document.getElementById("FullDate").innerHTML = Date();
+            </script>
+            -->
+          </div>
+        </div>
+
+        <div class="third">
+          <div class=" padding-top" style="min-height:100px">
+            <h3>Wesdome</h3>
+            <br>           
+            <blockquote class="container leftbar">
+              <p><i>❝ And those who were seen dancing were thought to be insane by those who could not hear the music.❞</i></p>
+              <p>Friedrich Nietzsche</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="third">
+          <div class=" padding-top" style="min-height:100px">
+            <h3>Personal Info</h3><br>
+            <p>
+              <strong>Abdallah Murad</strong> Computer Science (CS) student in the Islamic University of Gaza interested in psychology, philosophy, video games, and everything related to technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END-->
+
+
+
+    <script src="js/script.js"></script>
+
+      
+
+
+
+  </body>
+</html> 
